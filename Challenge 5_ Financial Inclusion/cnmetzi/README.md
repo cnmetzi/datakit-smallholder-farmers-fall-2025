@@ -79,13 +79,11 @@ Description of the finding, supported by data and visualizations.
 ## Limitations and Challenges
 
 ### Data Limitations
-- Missing data issues
-- Data quality concerns
-- Sample size or coverage limitations
+- There needs to be a technique developed to treat question repeated by different users on the same day which probably all stem from trying to answer the original question vs everyone asking it independently 
 
 ### Methodological Limitations
 - Limited EDA was done that would potentially show the need for more data cleansing or preparation
-- Assumed questions tagged as eng would basically be in English, each question has a unqiue id without error
+- Assumed questions tagged as eng would basically be in English, each question has a unqiue id without error or duplicates due to time contrainst (this should be checked)
 - Simplified by just looking at questions versus the question and answer both to see if the discussion was related to Finance
 - If we had some question data that was labeled as Financial or not that would be helpful to use with other modeling or checking how well the keyword approach picks up relevant questions
 
@@ -95,13 +93,13 @@ Description of the finding, supported by data and visualizations.
 - Other technical hurdles
 
 ### Miscellaneous
-- When looking at common stems I noticed some words from other languages were still used in the english questions and should potentially be translated when doing other topic analysis, i.e. obuyambi (sometimes mispelled obuyabi)
+- When looking at common stems I noticed some words from other languages were still used in the english questions and should potentially be translated when doing other topic analysis, i.e. obuyambi (sometimes mispelled obuyabi), buyinza
 - Also words are sometimes mispelled so when doing keyword analysis I found it useful to start with all the words used and then select Finance related ones to capture spelling variations
 
 ## Next Steps and Recommendations
 
 ### For Further Analysis
-1. **Recommendation 1**: What could be explored next
+1. **Recommendation 1**: Need to do more work to figure out how to reduce or better understand when the same question is repeated by different users and question ids on the same day but seems to all be from the same original question
 2. **Recommendation 2**: How to deepen this analysis
 3. **Recommendation 3**: Related questions to investigate
 
@@ -344,9 +342,9 @@ zstd                      1.5.7
 
 ## Contact and Collaboration
 
-**Author**: [Your Name]
+**Author**: Camille
 **GitHub**: @cnmetzi
-**Slack**: @[your_slack_handle]
+**Slack**: @Camille
 
 **Collaboration Welcome**: 
 - Open to feedback and suggestions
